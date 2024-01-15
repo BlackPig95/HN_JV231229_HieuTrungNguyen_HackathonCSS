@@ -37,7 +37,7 @@ nav {
     justify-content: space-evenly;
 }
 
-.nav-bar>div:first-child span {
+.navigation-link a {
 
     width: 6.5rem;
     height: 1.625rem;
@@ -287,7 +287,7 @@ footer {
     font-weight: 400;
 }
 
-/*Name introduction refinement*/
+/*Animation section*/
 #my-name {
     display: inline-block;
     background: linear-gradient(to right, #00FDEE, #8F00FF);
@@ -310,6 +310,17 @@ footer {
     animation-iteration-count: infinite;
     animation-name: wave;
 }
+
+.navigation-link {
+    transition: transform 1s ease-in,
+        color 1s ease-in;
+}
+
+.navigation-link:hover {
+    transform: scale(1.5);
+    color: blue;
+}
+
 
 @keyframes wave {
 
